@@ -4,5 +4,5 @@ lib_LTLIBRARIES = libmodezshopping.la
 ## Define the source file for the module
 libmodezshopping_la_SOURCES = mod_ezshopping.c
 
-AM_CFLAGS = -Wall @apache_cflags@ @apr_cflags@
+AM_CFLAGS = -Wall @apache_cflags@ @apr_cflags@ -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE
 
