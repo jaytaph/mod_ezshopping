@@ -8,8 +8,8 @@ AM_INIT_AUTOMAKE(mod_ezshopping, 0.2)
 AC_PROG_CC
 AM_PROG_LIBTOOL
 
-apache_cflags="-I`/usr/bin/apxs2 -q INCLUDEDIR` `/usr/bin/apxs2 -q CFLAGS`"
-apr_cflags="`/usr/bin/apr-config --cflags --includes`"
+apache_cflags="-I`/usr/sbin/apxs -q INCLUDEDIR` `/usr/sbin/apxs -q CFLAGS`"
+apr_cflags="`/usr/bin/apr-1-config --cflags --includes`"
 
 # Save the location of apache into the "apache_dir" variable.
 # The AC_SUBST macro causes the variable to be saved in config.status
